@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/map_parent_rl"
+        android:background="#eceff1"
+        android:layout_width="70dp"
+        android:layout_height="53dp">
+
+    <com.amap.api.maps.MapView
+        android:background="@color/white"
+        android:layout_margin="1px"
+        android:id="@+id/small_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/small_map_left_top" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/small_map_left_bottom" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/small_map_right_top" />
+
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:background="@drawable/small_map_right_bottom" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom_distance_ll"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/small_distance_tv"
+            tools:text="距离："
+            android:textColor="#979797"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#979797"
+            android:textSize="10sp"
+            android:id="@+id/small_time_tv"
+            tools:text="时间："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
